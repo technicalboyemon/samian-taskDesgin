@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
+.background {
+  position: relative;
+  background-image: url(./Image//bg.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: calc(100%-40%) !important;
+  height: 100vh;
+  width: 70% !important;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.background img {
+  width: 42%;
+  margin-left: 18%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Login {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  border-radius: 5px;
+  padding: 60px 70px;
+}
+.loginCenter {
+  border-radius: 5px;
+  margin: auto;
+  margin-left: -120px;
+  z-index: 999;
+  background-color: white;
+}
+.task {
+  display: flex;
+  justify-content: space-between;
+}
+.linkText {
+  color: rgb(98, 90, 153);
+}
+.input {
+  margin-top: 7px;
+  margin-bottom: 7px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  padding: 8px 35px;
+}
+button {
+  margin-top: 8px;
+  background-color: rgb(98, 90, 153);
+  border: 0px;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.logoText {
+  padding-top: 10px;
+  font-size: large;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.social-icon {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.social-icon img {
+  width: 38px;
+}
+.lineBreak {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: large;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+.lineBreak::after {
+  content: " ";
+  display: inline-flex;
+  border: 1px solid rgb(189, 189, 189);
+  width: 75px !important;
+  margin-left: 5px;
+}
+.lineBreak::before {
+  content: " ";
+  display: inline-flex;
+  border: 1px solid rgb(209, 209, 209);
+  width: 75px !important;
+  margin-right: 5px;
+}
+.forgetText {
+  margin-left: 50%;
+  color: red;
+  float: right;
 }
